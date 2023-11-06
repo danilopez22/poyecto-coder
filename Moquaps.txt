@@ -1,1 +1,466 @@
 https://app.moqups.com/0QDhUa2Jark7Sp315Xkks83USxOcVR0D/view/page/acaaa9c8c
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+ol , ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*----Conteiner----*/
+
+.conteiner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*------------------------HEADER--------------------*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+    padding: 1rem;
+    align-items:center;
+    justify-content: space-between;
+}
+
+header nav ol {
+    display: flex;
+    gap: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+  
+}
+
+nav ol li a {
+    color: white;
+
+}
+
+.active{
+    text-decoration: underline;
+}
+
+
+
+@media (min-width: 480px) {
+
+
+    
+
+    .logo{
+   
+    max-width: 200px;
+}
+
+
+
+ 
+
+}
+
+@media (min-width: 768px) {
+    
+header { 
+        flex-direction: row;
+    }
+
+
+
+    header nav ol {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 0 40px;
+        font-size: 20px;
+        text-align: end;
+        font-size: 1.5rem;
+    
+    }
+    .logo{
+        max-width: 250px;
+    }}
+
+
+@media (min-width: 1200px) {
+
+    header nav ol {
+        flex-direction: row;
+        font-size: 35px;
+        gap: 2rem;
+        margin: 0 70px;
+    }
+
+        .logo{
+            max-width: 400px;
+        }
+    }
+
+
+
+/*---------------------------FOOTER---------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer ol {
+    display: flex;
+    gap: 1rem;
+   
+}
+
+
+@media (min-width: 480px) {
+    
+        footer {
+
+        display: grid ;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ; 
+       
+      
+       }
+
+       footer ol { 
+        flex-direction: column;
+        text-align: end;
+
+       }
+
+       footer h6{
+        grid-column: span 2;
+        text-align: center;
+       align-self: start;
+       font-size: 1rem;
+       font-weight: lighter;
+
+       }
+
+       @media (min-width: 768px) {
+        
+        footer h6 {
+            font-size: 1.5rem;
+
+        }
+
+        footer ol{
+            font-size: 2rem;
+        }
+       }
+     
+
+}
+
+
+/*---------------------- Inicio --------------------------*/
+
+h2{
+   font-size: 2.5rem; 
+   background-color: black;
+   color: rgb(255, 175, 56);
+   text-align: center;
+   padding: 3rem;
+}
+
+h4{
+    font-size: 2rem;
+}
+
+main{
+    background-color: rgb(255, 175, 56);
+    
+}
+
+.portada-index{
+    background-image: url(../img/gato-portada1.jpeg);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    justify-content:  center;
+    
+    display: flex;
+   align-items: center;
+   color: white;
+
+}
+
+.texto-portada{
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 2rem;
+    font-size: 1.75rem;
+    border-radius: 2rem;
+    
+    text-align: center;
+    
+    
+   
+}
+
+.benef{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  
+    
+   
+    
+}
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 250px;
+    
+        
+}
+
+.otros-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+section article{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.abal{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.abal img{
+    max-height: 10vh;
+}
+
+
+@media (min-width: 480px) {
+
+    .benef{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+}}
+
+@media (min-width: 768px) {
+
+    .benef{
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .serv-1{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+         
+    }
+
+    .serv-1 img{
+        max-width: 60%;
+        object-fit: cover;
+    }
+
+    
+    .serv-2{
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+     
+    }
+
+    .serv-2 img{
+    max-width: 60%;
+    object-fit: cover;
+    }
+
+
+
+    
+}
+
+@media (min-width: 1024px) {
+
+    h2{
+        font-size: 4rem;
+    }
+
+    .texto-portada{
+        font-size: 3rem;
+    }
+
+.abal { 
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+gap: 1rem;
+align-items: center;
+margin: 0 2rem;
+padding: 2rem;
+justify-content: center;
+align-items: center;
+
+}
+
+.abal img{
+    
+    max-height: 100px;
+    align-self: center;
+    
+}
+
+}
+@media (min-width: 1200px) {
+
+    .beneficios {
+        font-size: 2.5rem;
+        gap: 2rem;
+        
+    }
+
+    .otros-servicios h4 {
+        font-size: 3.5rem;
+    }
+    .otros-servicios p {
+
+        font-size: 3rem;
+    }
+}
+
+
+
+/*------------------------------- REDES -------------------------------*/
+
+.portada-redes{
+        background-image: url(../img/balcon1.jpg);
+        width: 100%;
+        height: 70vh;
+        background-size: cover;
+        background-position: center;
+        justify-content:  center;        
+        display: flex;
+        align-items: center;
+        color: white;
+    
+}
+
+.portada-redes h1{
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 2rem;
+    font-size: 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    font-weight: 400;
+
+    }
+
+.nav-redes{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    font-size: 1.75rem;
+    padding: 2rem;
+    
+
+}
+.nav-redes li a {
+    color: black;
+    font-weight: 600;
+
+}
+
+.redes-desc {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 2rem;
+
+}
+
+
+
+@media (min-width: 768px) {
+  
+    .art-redes{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1rem;
+        padding: 2rem;
+
+    }
+
+    .art-redes-rev {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin: 0 1rem;
+        padding: 2rem;
+    }
+}
+
+.img-redes {
+    max-width: 30vw;
+    object-fit: cover;
+}
+
+.nav-redes{
+    font-size: 2.25rem;
+}
+
+
+@media (min-width: 1024px) {
+
+    .redes-desc {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,155 @@
+/*-------------Portada------------*/
+.cont-titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 3rem;
+    font-weight: 600;
+    color: black;
+}
+@media (min-width: 768px) {
+    .cont-titulo{
+        font-size: 70px;
+    }
+}
+
+/*------------Redes Sociales----------*/
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap:1rem;
+    padding: 2rem;
+    justify-content: center;
+    
+
+    & a{
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        background-color: rgb(0, 0, 0);
+        padding: 0.5rem;
+        border-radius: 30%;border-radius: 40%;
+        background: linear-gradient(145deg, #755518, #050300);
+        box-shadow:  22px 22px 44px #b57c28,-22px -22px 44px #ffe248;
+
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    
+    
+    .social{
+        gap: 6rem;
+        padding: 3rem;
+
+        & a{
+            font-size: 60px;
+            padding: 1rem;
+
+        }
+    }
+}
+
+/*-------------Formulario-------------*/
+
+.presupuesto{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    &__texto{
+        font-size: 17px;
+        
+    }
+
+    &__titulo{
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    }
+    }
+
+
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    overflow: hidden;
+
+    &__medidas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__marcadores {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        
+        
+    }
+
+    &__fotos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+
+        &__btn{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .presupuesto{
+        gap: 1rem;
+        padding: 2rem;
+
+    
+    &__titulo{
+        font-size: 40px;
+    }
+    
+    &__texto{
+        font-size: 25px;
+
+    }}
+
+    .datos{
+        display: grid;
+        grid-template-columns: 200px 550px;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0;
+        justify-content: center;
+        
+
+        &__marcadores{
+            grid-column-start: 2; 
+            grid-row-start: 1;
+            display: grid;
+            grid-template-columns: 0.7fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1rem;}
+        
+        &__medidas{
+            grid-column-start: 2; 
+            grid-row-start: 2;
+            flex-direction: row;}
+        
+            &__boton{grid-column: span 2;
+            width: 20px;}
+    }
+}

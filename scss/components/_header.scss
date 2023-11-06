@@ -1,0 +1,30 @@
+/*---------------HEADER--------------*/
+
+.navbar-toggler{
+    background-color: rgb(252, 252, 252);
+}
+
+/*---------------------Animacion de inicio------------------*/
+
+.logotipo{
+    @include mobile;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    padding: 300px;
+    justify-content: center;
+    background-color: black;    
+    animation: presenta 7s 4s forwards;
+
+}
+    
+
+    @keyframes presenta {
+        0% {
+            transform: translate(0 1000%) scale(10); /* Empieza fuera de la pantalla y 2 veces más ancho */
+        }
+        100% {
+            transform: scale(0); /* Termina en su posición original */
+        }
+    }

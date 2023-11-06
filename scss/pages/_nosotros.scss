@@ -1,0 +1,181 @@
+/*------------Portada-nosotros-----------*/
+.porta{
+    display: flex;
+    flex-direction: column;
+    
+    &__alfa{
+        background-image: url(../portadas/Empleados1.jpg);
+        height: 450px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        justify-content:  center;        
+        display: flex;
+        align-items: center;
+        color: white;    
+        
+        &__titulo{
+            background-color: rgba(0, 0, 0, 0.26);
+            padding: 2rem;
+            font-size: 2rem;
+            border-radius: 2rem;
+            text-align: center;
+            font-weight: 500; 
+    }}
+
+    &__beta{
+        margin:1rem 0;
+
+        &__texto{
+            padding: 1rem ;
+
+            & h4 {font-weight: 300;}
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .porta{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 300px 350px;
+
+        &__alfa{
+            grid-row-start: 1;
+            grid-row-end: 3;
+            height: 100%;
+        }
+
+        &__beta{
+            margin: 0;
+            justify-content: center;
+        }
+
+        & img{
+            align-content: center;
+            
+        }
+
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .porta{
+        grid-template-rows: 400px 450px;
+
+        &__beta{
+            margin: 0;
+
+            & h4{
+                font-size: 40px;
+            }
+
+            & p{
+                font-size:25px;
+            }
+        }
+}}
+
+/*---------------Metodos de trabajo---------------*/
+
+.metodo{
+    display: flex;
+    flex-direction: column;
+
+    & p{
+        margin:1rem ;
+    }
+}
+
+@media (min-width: 768px) {
+    .metodo{
+        flex-direction: row;
+        padding: 2rem;
+        gap: 10px;
+
+
+        & img{
+            width: 50%;
+            max-height: 700px;
+        }
+
+        & p{
+            font-size: 1.75rem;
+            text-align: start;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .metodo p{
+        font-size: 2rem;
+    }
+}
+
+/*------------------Materiales-----------------*/
+
+.materiales{
+    @include mobile;
+    gap: 1rem;
+    padding: 1rem;
+
+    &__muestras{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        }
+
+        & img{
+            width: 30%;
+            object-fit:contain;
+            border-radius: 50px;
+            background: linear-gradient(145deg, #ffbb3c, #e69e32);
+            box-shadow:  22px 22px 44px #b57c28,-22px -22px 44px #ffe248;
+
+        }
+
+
+    }
+
+@media (min-width: 768px) {
+    .materiales{
+        flex-direction: row;
+        font-size: 18px;
+        text-align: start;
+        padding: 1rem;
+        height: 30vh;
+
+        & p {
+            width: 40%;
+        }
+
+
+
+        & img{
+            transform: rotate(90deg) ;
+            height: 80%;
+            
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .materiales{ 
+        height: 40vh;
+        
+
+        & p{
+            font-size: 2rem;
+            width: 50%;
+        }
+
+        & img{
+            height: 50%;
+        }
+
+
+        
+    }
+}
