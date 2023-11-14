@@ -1,5 +1,5 @@
 /*---------------------------FOOTER---------------------*/
-footer{
+footer {
     display: flex;
     flex-direction: column;
     background-color: black;
@@ -9,10 +9,10 @@ footer{
     align-items: center;
     justify-content: center;
 
-    & nav ol li a{
+    & nav ol li a {
         color: white;
     }
-    
+
 }
 
 footer ol {
@@ -22,7 +22,7 @@ footer ol {
 
 }
 
-footer h6{
+footer h6 {
     text-align: center;
     font-size: 1rem;
     font-weight: lighter;
@@ -30,40 +30,40 @@ footer h6{
 
 
 @media (min-width: 480px) {
-    
-        footer {
 
-        display: grid ;
+    footer {
 
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2rem ; 
+        display: grid;
 
-
-}
-
-footer ol { 
-        flex-direction: column;
-        text-align: end;
-}
-
-footer h6{
-    grid-column: span 2;
+        grid-template-columns: 0.65fr 1fr;
+        grid-template-rows: 1fr 2rem;
 
 
     }
 
-@media (min-width: 768px) {
-        
+    footer ol {
+        flex-direction: column;
+        text-align: end;
+        justify-self: end;
+    }
+
+    footer h6 {
+        grid-column: span 2;
+
+
+    }
+
+    @media (min-width: 768px) {
+
         footer h6 {
             font-size: 1.5rem;
 
         }
 
-        footer ol{
+        footer ol {
             font-size: 1.75rem;
         }
-}
+    }
 
 
 }
-
